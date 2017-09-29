@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Registration from './Registration'
+import chalk from 'chalk'
+import Table from 'cli-table2'
 import { Grid, GridItem } from './Grid'
 import { Card, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card'
 import { Button } from 'react-toolbox/lib/button'
 import { createClient } from 'contentful'
-import chalk from 'chalk'
-import Table from 'cli-table2'
+import { SignUp } from './SignUp'
 import style from './App.css'
 
 const SPACE_ID = 'a08kq9f4a3yo'
@@ -135,7 +135,7 @@ class App extends Component {
             )
           })}
           <GridItem col='1/3'>
-            <Registration />
+            <SignUp />
           </GridItem>
         </Grid>
       </div>
