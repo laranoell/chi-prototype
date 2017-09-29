@@ -12,6 +12,7 @@ export const Article = (props) => {
     maxWidth: '700px',
     margin: '0 auto 150px auto'
   }
+
   return (
     <div>
       <div style={imageStyle} />
